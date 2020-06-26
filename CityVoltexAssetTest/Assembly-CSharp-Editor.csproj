@@ -64,6 +64,16 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\com\heparo\terrain\toolkit\editor\TerrainToolkitEditor.cs" />
+    <Compile Include="Assets\WorldMaps\Editor\Inspectors\BingMapsInspector.cs" />
+    <Compile Include="Assets\WorldMaps\Editor\Inspectors\WMSInspector.cs" />
+    <Compile Include="Assets\WorldMaps\Editor\ServerInfoRequesters\ServerInfoRequester.cs" />
+    <Compile Include="Assets\WorldMaps\Editor\ServerInfoRequesters\ServerTransaction.cs" />
+    <Compile Include="Assets\WorldMaps\Editor\ServerInfoRequesters\WMSInfoRequester.cs" />
+    <Compile Include="Assets\WorldMaps\Editor\WMSInfo\WMSBoundingBox.cs" />
+    <Compile Include="Assets\WorldMaps\Editor\WMSInfo\WMSInfo.cs" />
+    <Compile Include="Assets\WorldMaps\Editor\WMSInfo\WMSLayer.cs" />
+    <Compile Include="Assets\WorldMaps\Editor\WMSInfo\WMSServerBookmarks.cs" />
+    <Compile Include="Assets\WorldMaps\Editor\WMSInfo\WMSXMLParser.cs" />
     <Reference Include="UnityEditor.TestRunner">
       <HintPath>C:/Users/admin/Downloads/CityVoltexAssetTest/CityVoltexAssetTest/Library/ScriptAssemblies/UnityEditor.TestRunner.dll</HintPath>
     </Reference>

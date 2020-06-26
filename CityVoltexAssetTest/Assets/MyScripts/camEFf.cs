@@ -4,11 +4,21 @@ using UnityEngine;
 
 public class camEFf : MonoBehaviour
 {
-    public float waterlevel;
+    public GameObject player;
+    public GameObject water;
+    public GameObject water_projector;
+    
+ 
+    private float waterlevel;
     private bool isUnderwater;
     private Color normal_color;
     private Color underwater_color;
+
+    private Material noSkybox;
+    //private Material defaultSkybox = RenderSettings.skybox;
     // Start is called before the first frame update
+
+    
     void Start()
     {
         isUnderwater = false;
@@ -19,7 +29,8 @@ public class camEFf : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if ((transform.position.y < waterlevel) != isUnderwater){
+        waterlevel = water.transform.position.y;
+        if ((player.transform.position.y < waterlevel) != isUnderwater){
             isUnderwater = transform.position.y < waterlevel;
             if (isUnderwater) setUnderWater();
             if (!isUnderwater) setNormal();
@@ -27,15 +38,21 @@ public class camEFf : MonoBehaviour
     }
     void setNormal()
     {
+        water_projector.SetActive(false);
         Debug.Log("Normal");
-        RenderSettings.fogColor = normal_color;
-        RenderSettings.fogDensity = 0.22f;
+        RenderSettings.fog = false;
+        //RenderSettings.fogColor = normal_color;
+        //RenderSettings.fogDensity = 0;
+        
     }
 
     void setUnderWater()
     {
+        water_projector.SetActive(true);
+        RenderSettings.fog = true;
         Debug.Log("Underwater");
-        RenderSettings.fogColor = normal_color;
-        RenderSettings.fogDensity = 0.222f;
+        RenderSettings.fogColor = underwater_color;
+        RenderSettings.fogDensity = 0.022f;
+        
     }
 }

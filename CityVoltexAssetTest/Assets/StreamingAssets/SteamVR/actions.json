@@ -83,7 +83,7 @@
       "requirement": "optional"
     },
     {
-      "name": "/actions/SeaLevelRise/in/NewAction",
+      "name": "/actions/SeaLevelRise/in/goBack",
       "type": "boolean",
       "requirement": "mandatory"
     },

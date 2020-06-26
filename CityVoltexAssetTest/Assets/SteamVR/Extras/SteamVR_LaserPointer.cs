@@ -2,6 +2,7 @@
 using UnityEngine;
 using System.Collections;
 
+
 namespace Valve.VR.Extras
 {
     public class SteamVR_LaserPointer : MonoBehaviour
@@ -45,7 +46,7 @@ namespace Valve.VR.Extras
 
             pointer = GameObject.CreatePrimitive(PrimitiveType.Cube);
             pointer.transform.parent = holder.transform;
-            pointer.transform.localScale = new Vector3(thickness, thickness, 100f);
+            pointer.transform.localScale = new Vector3(thickness, thickness, 1000f);
             pointer.transform.localPosition = new Vector3(0f, 0f, 50f);
             pointer.transform.localRotation = Quaternion.identity;
             BoxCollider collider = pointer.GetComponent<BoxCollider>();
@@ -74,6 +75,7 @@ namespace Valve.VR.Extras
         {
             if (PointerIn != null)
                 PointerIn(this, e);
+      
         }
 
         public virtual void OnPointerClick(PointerEventArgs e)
@@ -140,6 +142,7 @@ namespace Valve.VR.Extras
                 argsClick.flags = 0;
                 argsClick.target = hit.transform;
                 OnPointerClick(argsClick);
+                
             }
 
             if (interactWithUI != null && interactWithUI.GetState(pose.inputSource))

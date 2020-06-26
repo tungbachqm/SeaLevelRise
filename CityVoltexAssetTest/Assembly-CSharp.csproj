@@ -64,9 +64,16 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\com\heparo\terrain\toolkit\scripts\TerrainToolkit.cs" />
-    <Compile Include="Assets\editSlider.cs" />
     <Compile Include="Assets\MyScripts\camEFf.cs" />
     <Compile Include="Assets\MyScripts\change_height.cs" />
+    <Compile Include="Assets\MyScripts\Collider_handler.cs" />
+    <Compile Include="Assets\MyScripts\FisrtMapHandler.cs" />
+    <Compile Include="Assets\MyScripts\graphPicHandler.cs" />
+    <Compile Include="Assets\MyScripts\InputController.cs" />
+    <Compile Include="Assets\MyScripts\laser_handler.cs" />
+    <Compile Include="Assets\MyScripts\projectUnderW.cs" />
+    <Compile Include="Assets\MyScripts\SLR_data_handling.cs" />
+    <Compile Include="Assets\MyScripts\SteamVRLasertoNorm.cs" />
     <Compile Include="Assets\SampleScenes\Menu\Scripts\MenuSceneLoader.cs" />
     <Compile Include="Assets\SampleScenes\Menu\Scripts\PauseMenu.cs" />
     <Compile Include="Assets\SampleScenes\Menu\Scripts\SceneAndURLLoader.cs" />
@@ -75,6 +82,14 @@
     <Compile Include="Assets\SampleScenes\Scripts\ParticleSceneControls.cs" />
     <Compile Include="Assets\SampleScenes\Scripts\PlaceTargetWithMouse.cs" />
     <Compile Include="Assets\SampleScenes\Scripts\SlowMoButton.cs" />
+    <Compile Include="Assets\WorldMaps\Scripts\OnlineTextures\BingMapsTexture.cs" />
+    <Compile Include="Assets\WorldMaps\Scripts\OnlineTextures\OnlineTexture.cs" />
+    <Compile Include="Assets\WorldMaps\Scripts\OnlineTextures\WMSTexture.cs" />
+    <Compile Include="Assets\WorldMaps\Scripts\Planes\PlanesFactory.cs" />
+    <Compile Include="Assets\WorldMaps\Scripts\Planes\QuadtreeLODPlane.cs" />
+    <Compile Include="Assets\WorldMaps\Scripts\Utilities\CameraMovement.cs" />
+    <None Include="Assets\_Shaders\NoiseGround.shader" />
+    <None Include="Assets\_Shaders\noiseSimplex.cginc" />
     <None Include="Assets\SampleScenes\Shaders\Skybox-Procedural.shader" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>C:/Users/admin/Downloads/CityVoltexAssetTest/CityVoltexAssetTest/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>

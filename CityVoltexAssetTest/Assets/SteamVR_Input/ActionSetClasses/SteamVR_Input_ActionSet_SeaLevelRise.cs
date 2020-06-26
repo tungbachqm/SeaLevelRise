@@ -17,11 +17,11 @@ namespace Valve.VR
     public class SteamVR_Input_ActionSet_SeaLevelRise : Valve.VR.SteamVR_ActionSet
     {
         
-        public virtual SteamVR_Action_Boolean NewAction
+        public virtual SteamVR_Action_Boolean goBack
         {
             get
             {
-                return SteamVR_Actions.seaLevelRise_NewAction;
+                return SteamVR_Actions.seaLevelRise_goBack;
             }
         }
         
