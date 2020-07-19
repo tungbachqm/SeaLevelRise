@@ -11,11 +11,8 @@ To using the app, first choosing the scenario you want (RCP 2.6, RCP 4.5, RCO 9.
 Next, choose the sencario are you want to see the projection (only global mean for now)
 
 Finally, using the controller to interact with the model.
-  
-  Press the grib button of the right hand controller(the one with the ray cast) to increseas the year.
-  
-  Press the grib button of the left hand to decreases the year.
-  
-  Using the touch pad to change the variation of sea level in a specific year.
-    Press the right arrea (x>0) of the touch pad to increase the sea level.
-    Press the left area (x<0) of the touch pad to increase the sea level.
+  * Press the grib button of the right hand controller(the one with the ray cast) to increseas the year.
+  * Press the grib button of the left hand to decreases the year.
+  * Using the touch pad to change the variation of sea level in a specific year.
+    * Press the right arrea (x>0) of the touch pad to increase the sea level.
+    * Press the left area (x<0) of the touch pad to increase the sea level.
