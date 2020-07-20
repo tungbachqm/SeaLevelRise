@@ -31,7 +31,9 @@ public class laser_handler : MonoBehaviour
     public void PointerClick(object sender, PointerEventArgs e)
     {
         //Debug.Log(e.target.name);
-        Debug.Log(e.target.name);
+        //Debug.Log(e.target.name);
+        //Debug.Log(e.target.tag);
+        //Debug.Log(e.target.gameObject.tag);
         switch (state)
         {   
             case 0:
@@ -39,6 +41,11 @@ public class laser_handler : MonoBehaviour
                     firstMapDeactivate(e.target.name);
                     state = 1;
                     graphPic.activate();
+                }
+                else if (isNorButton(e.target.gameObject))
+                {
+                    Debug.Log(e.target.gameObject);
+                    e.target.gameObject.GetComponent<Button>().onClick.Invoke();
                 }
                 break;
             case 1:
@@ -96,5 +103,11 @@ public class laser_handler : MonoBehaviour
     {
         first_map_handler.deactivate();
         InputController.setSLRdatabase(mapColName);
+    }
+
+    public bool isNorButton(GameObject obj)
+    {
+        return (obj.tag == "NormalButton");
+        
     }
 }

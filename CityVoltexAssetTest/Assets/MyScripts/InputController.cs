@@ -91,7 +91,7 @@ public class InputController : MonoBehaviour
     {
         
        
-        if (pressAAAction.GetLastState(SteamVR_Input_Sources.LeftHand))
+        if (pressAAAction.GetLastStateDown(SteamVR_Input_Sources.LeftHand))
         {
             if (list_index < slr_data_list.Count - 1)
             {
@@ -102,7 +102,7 @@ public class InputController : MonoBehaviour
             }
 
         }
-        if (pressAAAction.GetLastState(SteamVR_Input_Sources.RightHand))
+        if (pressAAAction.GetLastStateDown(SteamVR_Input_Sources.RightHand))
         {
             if (list_index > 0)
             {

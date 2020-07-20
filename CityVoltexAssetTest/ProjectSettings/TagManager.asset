@@ -9,6 +9,7 @@ TagManager:
   - Button_Col
   - GraphPic
   - GraphPicCol
+  - NormalButton
   layers:
   - Default
   - TransparentFX
